@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Sam Ibrahim Hasan — Frontend Developer, UI/UX Designer and AI enthusiast building modern digital experiences."
+  />
+
+  <meta name="theme-color" content="#05070c" />
+
+  <title>Sam Hasan — Frontend Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Three.js -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+    defer
+  ></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- =====================================================
+       LOADER
+  ====================================================== -->
+
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-mark">&lt;/&gt;</span>
+      <span class="loader-text">SAM HASAN</span>
+    </div>
+  </div>
+
+
+  <!-- =====================================================
+       CUSTOM CURSOR
+  ====================================================== -->
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+
+  <!-- =====================================================
+       BACKGROUND
+  ====================================================== -->
+
+  <div class="background">
+    <div class="background-grid"></div>
+    <div class="background-glow background-glow-one"></div>
+    <div class="background-glow background-glow-two"></div>
+  </div>
+
+
+  <!-- =====================================================
+       NAVIGATION
+  ====================================================== -->
+
+  <header class="navbar" id="navbar">
+
+    <a href="#home" class="brand" aria-label="Sam Hasan home">
+      <span class="brand-symbol">&lt;/&gt;</span>
+      <span>SAM HASAN</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="nav-cta">
+      Let's Talk
+      <span>↗</span>
+    </a>
+
+    <button
+      class="mobile-menu-button"
+      id="mobileMenuButton"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+  </header>
+
+
+  <!-- =====================================================
+       MOBILE MENU
+  ====================================================== -->
+
+  <div class="mobile-menu" id="mobileMenu">
+
+    <div class="mobile-menu-inner">
+
+      <span class="mobile-menu-label">NAVIGATION</span>
+
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+
+      <div class="mobile-menu-footer">
+        <span>Sam Ibrahim Hasan</span>
+        <span>Frontend Developer</span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
+  <main>
+
+
+    <!-- ===================================================
+         HERO
+    ==================================================== -->
+
+    <section class="hero section" id="home">
+
+      <canvas id="heroCanvas"></canvas>
+
+      <div class="hero-content">
+
+        <div class="hero-status reveal">
+          <span class="status-dot"></span>
+          <span>OPEN TO OPPORTUNITIES</span>
+        </div>
+
+        <p class="eyebrow reveal">
+          FRONTEND DEVELOPMENT · UI/UX · PROGRAMMING
+        </p>
+
+        <h1 class="hero-title reveal">
+          Building digital
+          <span class="gradient-text">experiences</span>
+          that actually work.
+        </h1>
+
+        <p class="hero-description reveal">
+          I'm Sam Ibrahim Hasan, a self-taught frontend developer focused on
+          creating modern, responsive and user-friendly websites with clean
+          code, thoughtful design and smooth interactions.
+        </p>
+
+        <div class="hero-actions reveal">
+
+          <a href="#projects" class="button button-primary">
+            <span>View My Projects</span>
+            <span class="button-arrow">↗</span>
+          </a>
+
+          <a href="#contact" class="button button-secondary">
+            <span>Contact Me</span>
+            <span class="button-arrow">↗</span>
+          </a>
+
+        </div>
+
+        <div class="hero-meta reveal">
+
+          <div class="meta-item">
+            <span class="meta-number">01</span>
+            <span>Frontend</span>
+          </div>
+
+          <div class="meta-line"></div>
+
+          <div class="meta-item">
+            <span class="meta-number">02</span>
+            <span>UI / UX</span>
+          </div>
+
+          <div class="meta-line"></div>
+
+          <div class="meta-item">
+            <span class="meta-number">03</span>
+            <span>Programming</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-scroll">
+        <span>SCROLL TO EXPLORE</span>
+        <div class="scroll-line"></div>
+      </div>
+
+
+      <div class="hero-code-card reveal">
+
+        <div class="code-window-top">
+          <div class="window-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <span>sam.js</span>
+        </div>
+
+        <div class="code-content">
+          <span class="code-line">
+            <i>const</i> developer = {
+          </span>
+
+          <span class="code-line indent">
+            name: <b>"Sam Hasan"</b>,
+          </span>
+
+          <span class="code-line indent">
+            focus: <b>"Frontend"</b>,
+          </span>
+
+          <span class="code-line indent">
+            design: <b>"UI/UX"</b>,
+          </span>
+
+          <span class="code-line indent">
+            learning: <b>"AI"</b>
+          </span>
+
+          <span class="code-line">
+            };
+          </span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         ABOUT
+    ==================================================== -->
+
+    <section class="about section" id="about">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <div class="section-index">
+            <span>01</span>
+            <span>ABOUT</span>
+          </div>
+
+          <h2>
+            Turning ideas into
+            <span class="gradient-text">real products.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="about-layout">
+
+          <div class="about-main reveal">
+
+            <p class="large-text">
+              I'm a passionate web developer who enjoys building websites
+              from the ground up.
+            </p>
+
+            <p>
+              I care about both sides of development: writing clean code and
+              creating interfaces that people actually enjoy using.
+            </p>
+
+            <p>
+              My goal is to continue improving my development and UI/UX skills
+              while building useful digital products and solving real-world
+              problems.
+            </p>
+
+            <div class="about-signature">
+              <span>&lt;/&gt;</span>
+              <span>Learn · Build · Improve</span>
+            </div>
+
+          </div>
+
+
+          <div class="about-side reveal">
+
+            <div class="profile-card">
+
+              <div class="profile-card-top">
+                <span class="profile-label">PROFILE</span>
+                <span class="profile-index">01 / 01</span>
+              </div>
+
+              <div class="profile-avatar">
+                <span>SH</span>
+              </div>
+
+              <h3>Sam Ibrahim Hasan</h3>
+
+              <p>Frontend Developer</p>
+
+              <div class="profile-details">
+
+                <div>
+                  <span>LOCATION</span>
+                  <strong>Tartus, Syria</strong>
+                </div>
+
+                <div>
+                  <span>EXPERIENCE</span>
+                  <strong>Freelance / Self-Taught</strong>
+                </div>
+
+                <div>
+                  <span>FOCUS</span>
+                  <strong>Frontend Development</strong>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="principles-grid">
+
+          <article class="principle reveal">
+            <span>01</span>
+            <h3>Clean Code</h3>
+            <p>Organized, maintainable and understandable frontend code.</p>
+          </article>
+
+          <article class="principle reveal">
+            <span>02</span>
+            <h3>Responsive</h3>
+            <p>Interfaces designed to work across different screen sizes.</p>
+          </article>
+
+          <article class="principle reveal">
+            <span>03</span>
+            <h3>User Focused</h3>
+            <p>Design decisions built around usability and clarity.</p>
+          </article>
+
+          <article class="principle reveal">
+            <span>04</span>
+            <h3>Continuous Learning</h3>
+            <p>Always exploring better tools, techniques and technologies.</p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         SKILLS
+    ==================================================== -->
+
+    <section class="skills section" id="skills">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <div class="section-index">
+            <span>02</span>
+            <span>SKILLS</span>
+          </div>
+
+          <h2>
+            The tools behind
+            <span class="gradient-text">the work.</span>
+          </h2>
+
+          <p>
+            Technologies and development principles I use to turn ideas
+            into polished digital experiences.
+          </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+          <article class="skill-card tilt-card reveal">
+
+            <div class="skill-number">01</div>
+
+            <div class="skill-icon">&lt;/&gt;</div>
+
+            <h3>HTML5</h3>
+
+            <p>
+              Semantic structure, accessibility and modern web standards.
+            </p>
+
+            <div class="skill-progress">
+              <span style="width: 94%"></span>
+            </div>
+
+            <span class="skill-tag">STRUCTURE</span>
+
+          </article>
+
+
+          <article class="skill-card tilt-card reveal">
+
+            <div class="skill-number">02</div>
+
+            <div class="skill-icon">#</div>
+
+            <h3>CSS3</h3>
+
+            <p>
+              Responsive layouts, animations, Flexbox, Grid and modern UI.
+            </p>
+
+            <div class="skill-progress">
+              <span style="width: 91%"></span>
+            </div>
+
+            <span class="skill-tag">DESIGN</span>
+
+          </article>
+
+
+          <article class="skill-card tilt-card reveal">
+
+            <div class="skill-number">03</div>
+
+            <div class="skill-icon">JS</div>
+
+            <h3>JavaScript</h3>
+
+            <p>
+              Interactive experiences, DOM manipulation and frontend logic.
+            </p>
+
+            <div class="skill-progress">
+              <span style="width: 78%"></span>
+            </div>
+
+            <span class="skill-tag">INTERACTION</span>
+
+          </article>
+
+
+          <article class="skill-card tilt-card reveal">
+
+            <div class="skill-number">04</div>
+
+            <div class="skill-icon">UI</div>
+
+            <h3>UI / UX Design</h3>
+
+            <p>
+              Visual hierarchy, usability, layouts, wireframing and interfaces.
+            </p>
+
+            <div class="skill-progress">
+              <span style="width: 82%"></span>
+            </div>
+
+            <span class="skill-tag">EXPERIENCE</span>
+
+          </article>
+
+
+          <article class="skill-card tilt-card reveal">
+
+            <div class="skill-number">05</div>
+
+            <div class="skill-icon">↗</div>
+
+            <h3>Responsive Design</h3>
+
+            <p>
+              Mobile-first experiences that adapt across devices.
+            </p>
+
+            <div class="skill-progress">
+              <span style="width: 92%"></span>
+            </div>
+
+            <span class="skill-tag">ADAPTIVE</span>
+
+          </article>
+
+
+          <article class="skill-card tilt-card reveal">
+
+            <div class="skill-number">06</div>
+
+            <div class="skill-icon">⌘</div>
+
+            <h3>Git & GitHub</h3>
+
+            <p>
+              Version control, project management and deployment workflows.
+            </p>
+
+            <div class="skill-progress">
+              <span style="width: 72%"></span>
+            </div>
+
+            <span class="skill-tag">WORKFLOW</span>
+
+          </article>
+
+
+          <article class="skill-card tilt-card reveal">
+
+            <div class="skill-number">07</div>
+
+            <div class="skill-icon">⚡</div>
+
+            <h3>Performance</h3>
+
+            <p>
+              Fast loading, optimization, usability and SEO principles.
+            </p>
+
+            <div class="skill-progress">
+              <span style="width: 78%"></span>
+            </div>
+
+            <span class="skill-tag">SPEED</span>
+
+          </article>
+
+
+          <article class="skill-card tilt-card reveal">
+
+            <div class="skill-number">08</div>
+
+            <div class="skill-icon">AI</div>
+
+            <h3>AI / Programming</h3>
+
+            <p>
+              Exploring programming and AI as the next stage of my development journey.
+            </p>
+
+            <div class="skill-progress">
+              <span style="width: 46%"></span>
+            </div>
+
+            <span class="skill-tag">LEARNING</span>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         PROJECTS
+    ==================================================== -->
+
+    <section class="projects section" id="projects">
+
+      <div class="container">
+
+        <div class="section-heading projects-heading reveal">
+
+          <div class="section-index">
+            <span>03</span>
+            <span>PROJECTS</span>
+          </div>
+
+          <h2>
+            Selected
+            <span class="gradient-text">work.</span>
+          </h2>
+
+          <p>
+            Real websites built to combine strong visual identity,
+            responsive development and practical user experiences.
+          </p>
+
+        </div>
+
+
+        <div class="projects-list">
+
+
+          <!-- VANTA CAFE -->
+
+          <article class="project-card project-featured reveal">
+
+            <div class="project-number">01</div>
+
+            <div class="project-preview preview-cafe">
+
+              <div class="preview-noise"></div>
+
+              <div class="cafe-window">
+
+                <div class="preview-nav">
+                  <span>VANTA</span>
+
+                  <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+
+                <div class="cafe-content">
+
+                  <span class="mini-label">CAFE & RESTAURANT</span>
+
+                  <h4>
+                    Crafted for
+                    <em>moments.</em>
+                  </h4>
+
+                  <div class="cafe-line"></div>
+
+                  <span class="mini-button">EXPLORE MENU →</span>
+
+                </div>
+
+              </div>
+
+              <div class="preview-floating-card">
+                <span>01</span>
+                <strong>VANTA</strong>
+                <small>CAFE</small>
+              </div>
+
+            </div>
+
+
+            <div class="project-info">
+
+              <div class="project-top">
+
+                <div>
+                  <span class="project-category">
+                    WEB DEVELOPMENT
+                  </span>
+
+                  <h3>Vanta Cafe</h3>
+                </div>
+
+                <span class="project-status">
+                  COMPLETED
+                </span>
+
+              </div>
+
+              <p>
+                A modern cafe website designed to showcase the brand,
+                menu and atmosphere with a polished responsive experience.
+              </p>
+
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+
+              <a
+                href="https://samismail1988.github.io/vanta-cafe/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                <span>View Project</span>
+                <span>↗</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- NOX BLUE -->
+
+          <article class="project-card project-featured reverse reveal">
+
+            <div class="project-number">02</div>
+
+            <div class="project-preview preview-hotel">
+
+              <div class="hotel-orbit"></div>
+
+              <div class="hotel-content">
+
+                <span class="mini-label">
+                  BOUTIQUE HOTEL
+                </span>
+
+                <h4>
+                  Unrivaled
+                  <br>
+                  <em>Elegance.</em>
+                </h4>
+
+                <div class="hotel-details">
+                  <span>ROOMS</span>
+                  <span>SPA</span>
+                  <span>DINING</span>
+                </div>
+
+              </div>
+
+              <div class="hotel-glass">
+                <span>AURELIA</span>
+                <small>Luxury Collection</small>
+              </div>
+
+            </div>
+
+
+            <div class="project-info">
+
+              <div class="project-top">
+
+                <div>
+                  <span class="project-category">
+                    WEB DESIGN
+                  </span>
+
+                  <h3>Nox Blue</h3>
+                </div>
+
+                <span class="project-status">
+                  COMPLETED
+                </span>
+
+              </div>
+
+              <p>
+                A dark modern website concept focused on visual design,
+                cinematic presentation and user experience.
+              </p>
+
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>UI/UX</span>
+              </div>
+
+              <a
+                href="https://samismail1988.github.io/nox-blue/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                <span>View Project</span>
+                <span>↗</span>
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- NOVA GYM -->
+
+          <article class="project-card project-featured reveal">
+
+            <div class="project-number">03</div>
+
+            <div class="project-preview preview-gym">
+
+              <div class="gym-grid"></div>
+
+              <div class="gym-content">
+
+                <span class="mini-label">
+                  FITNESS
+                </span>
+
+                <h4>
+                  BUILD
+                  <br>
+                  <em>STRONG.</em>
+                </h4>
+
+                <div class="gym-bar"></div>
+
+                <span class="gym-small">
+                  PERFORMANCE · DISCIPLINE · POWER
+                </span>
+
+              </div>
+
+              <div class="gym-badge">
+                <span>NOVA</span>
+                <strong>GYM</strong>
+              </div>
+
+            </div>
+
+
+            <div class="project-info">
+
+              <div class="project-top">
+
+                <div>
+                  <span class="project-category">
+                    BUSINESS WEBSITE
+                  </span>
+
+                  <h3>Nova Gym</h3>
+                </div>
+
+                <span class="project-status">
+                  COMPLETED
+                </span>
+
+              </div>
+
+              <p>
+                A modern fitness website with a strong visual identity,
+                responsive layout and energetic user experience.
+              </p>
+
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+
+              <a
+                href="https://samismail1988.github.io/nova-gym/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                <span>View Project</span>
+                <span>↗</span>
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <div class="projects-footer reveal">
+
+          <span>
+            03 PROJECTS · REAL WORK
+          </span>
+
+          <span>
+            MORE TO COME
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         EXPERIENCE / PROCESS
+    ==================================================== -->
+
+    <section class="process section">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <div class="section-index">
+            <span>04</span>
+            <span>PROCESS</span>
+          </div>
+
+          <h2>
+            From idea to
+            <span class="gradient-text">launch.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="process-line">
+
+          <article class="process-item reveal">
+
+            <span class="process-number">01</span>
+
+            <div>
+              <span class="process-label">DISCOVER</span>
+              <h3>Understand</h3>
+              <p>
+                Understand the goal, audience and project requirements.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="process-item reveal">
+
+            <span class="process-number">02</span>
+
+            <div>
+              <span class="process-label">DESIGN</span>
+              <h3>Structure</h3>
+              <p>
+                Create a clean visual direction and responsive structure.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="process-item reveal">
+
+            <span class="process-number">03</span>
+
+            <div>
+              <span class="process-label">DEVELOP</span>
+              <h3>Build</h3>
+              <p>
+                Turn the design into organized, functional frontend code.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="process-item reveal">
+
+            <span class="process-number">04</span>
+
+            <div>
+              <span class="process-label">TEST</span>
+              <h3>Refine</h3>
+              <p>
+                Check responsiveness, interactions, performance and usability.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="process-item reveal">
+
+            <span class="process-number">05</span>
+
+            <div>
+              <span class="process-label">LAUNCH</span>
+              <h3>Ship</h3>
+              <p>
+                Deploy the experience and continue improving it after launch.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         CONTACT
+    ==================================================== -->
+
+    <section class="contact section" id="contact">
+
+      <div class="container">
+
+        <div class="contact-box reveal">
+
+          <div class="contact-orb"></div>
+
+          <div class="contact-content">
+
+            <span class="section-index">
+              <span>05</span>
+              <span>CONTACT</span>
+            </span>
+
+            <h2>
+              Have an idea?
+              <br>
+              <span class="gradient-text">Let's build it.</span>
+            </h2>
+
+            <p>
+              Interested in website development, UI/UX design,
+              collaborations or a project idea?
+              Feel free to reach out.
+            </p>
+
+            <a
+              href="mailto:smahasan88@gmail.com"
+              class="email-link"
+            >
+              <span>smahasan88@gmail.com</span>
+              <span>↗</span>
+            </a>
+
+          </div>
+
+
+          
+
+
+       
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="footer">
+
+    <div class="container footer-inner">
+
+      <a href="#home" class="footer-brand">
+        <span>&lt;/&gt;</span>
+        SAM HASAN
+      </a>
+
+      <p>
+        Frontend Developer · UI/UX Designer · AI Enthusiast
+      </p>
+
+      <span class="footer-copy">
+        © 2026 Sam Ibrahim Hasan
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =====================================================
+       BACK TO TOP
+  ====================================================== -->
+
+  <button
+    class="back-to-top"
+    id="backToTop"
+    aria-label="Back to top"
+  >
+    ↑
+  </button>
+
+</body>
+</html>
